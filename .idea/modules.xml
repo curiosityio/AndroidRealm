@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidRealm.iml" filepath="$PROJECT_DIR$/AndroidRealm.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-realm-core/android-realm-core.iml" filepath="$PROJECT_DIR$/android-realm-core/android-realm-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-realm-core-rx/android-realm-core-rx.iml" filepath="$PROJECT_DIR$/android-realm-core-rx/android-realm-core-rx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-realm-recyclerview/android-realm-recyclerview.iml" filepath="$PROJECT_DIR$/android-realm-recyclerview/android-realm-recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

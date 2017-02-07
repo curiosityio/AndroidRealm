@@ -1,1 +1,1 @@
-include ':app', ':android-realm-core', ':android-realm-core-rx'
+include ':app', ':android-realm-core', ':android-realm-core-rx', ':android-realm-recyclerview'

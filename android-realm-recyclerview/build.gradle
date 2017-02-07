@@ -1,4 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
 
 android {
     compileSdkVersion 25
@@ -33,8 +39,4 @@ dependencies {
     compile 'com.googlecode.java-diff-utils:diffutils:1.3.0'
     compile project(':android-realm-core')
     compile project(':android-realm-core-rx')
-}
-repositories {
-    mavenCentral()
-    maven { url 'https://jitpack.io' }
 }

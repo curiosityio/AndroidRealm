@@ -13,7 +13,7 @@ import java.util.*
 // it will automatically insert and delete rows (with animations) for RV when data changes to the parent model.
 // Changes to RV rows is not automatic. Must call setPendingItemChanged() before you perform the realm write transaction in order to have notifyDataSetChanged called for you.
 // with this adapter, you should not be manually calling any notify_() functions. They should all be in here for you!
-open abstract class RealmRecyclerViewAdapter<PARENT_MODEL: RealmObject, LIST_DATA: RealmObject, VH: RecyclerView.ViewHolder>(parentContext: Context, val parentModel: PARENT_MODEL, val getDataInterface: GetDataInterface<LIST_DATA>) : RealmRecyclerViewAdapter<LIST_DATA, VH>(parentContext, getDataInterface.getRealmList(), false) {
+abstract class RealmRecyclerViewAdapter<PARENT_MODEL: RealmObject, LIST_DATA: RealmObject, VH: RecyclerView.ViewHolder>(parentContext: Context, val parentModel: PARENT_MODEL, val getDataInterface: GetDataInterface<LIST_DATA>) : RealmRecyclerViewAdapter<LIST_DATA, VH>(parentContext, getDataInterface.getRealmList(), false) {
 
     interface GetDataInterface<LIST_DATA: RealmObject> {
         fun getRealmList(): RealmList<LIST_DATA>?

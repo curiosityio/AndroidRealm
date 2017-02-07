@@ -21,6 +21,13 @@ allprojects {
 Then, install as many of the modules as you wish.
 
 Core:
+
 ```
-compile 'com.github.curiosityio:android-realm-core:0.1.0'
+compile 'com.github.curiosityio:AndroidRealm:android-realm-core:0.1.0'
+```
+
+Core with some RxJava Observable goodness (depends on core, just adds Rx functionality to it.):
+
+```
+compile 'com.github.curiosityio:AndroidRealm:android-realm-core-rx:0.1.0'
 ```

@@ -1,4 +1,5 @@
 # AndroidRealm
+
 Add Realm.io to your Android app along with useful utilities. 
 
 # Install:
@@ -33,7 +34,15 @@ compile 'com.github.curiosityio.AndroidRealm:android-realm-core-rx:0.1.0'
 ```
 
 RealmRecyclerViewAdapter (depends on core):
+*Note: I do not advise using anymore. Use [official realm adapters](https://github.com/realm/realm-android-adapters) v2.+ instead as they now support.*
 
 ```
 compile 'com.github.curiosityio.AndroidRealm:android-realm-recyclerview:0.1.0'
+```
+
+# Configure
+
+```
+AndroidRealmConfig.overrideRealmInstanceConfig() # Name realm instances. Allows you to easily create multiple realms.
+AndroidRealmConfig.setRealmMigrationManager() # Used to easily migrate realm instances when versions get bumped.
 ```

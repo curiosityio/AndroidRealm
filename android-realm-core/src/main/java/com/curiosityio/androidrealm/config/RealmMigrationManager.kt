@@ -1,4 +1,4 @@
-package com.curiosityio.config
+package com.curiosityio.androidrealm.config
 
 import io.realm.RealmSchema
 

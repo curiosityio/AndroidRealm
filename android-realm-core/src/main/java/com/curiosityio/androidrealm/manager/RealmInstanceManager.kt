@@ -2,7 +2,7 @@ package com.curiosityio.androidrealm.manager
 
 import android.content.Context
 import android.preference.PreferenceManager
-import com.curiosityio.config.AndroidRealmConfig
+import com.curiosityio.androidrealm.config.AndroidRealmConfig
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import io.realm.FieldAttribute
@@ -22,7 +22,7 @@ object RealmInstanceManager {
 
     private fun getConfiguration(): RealmConfiguration {
         return RealmConfiguration.Builder()
-                .name("${AndroidRealmConfig.realmInstanceConfig.getRealmInstanceName()}.realm")
+                .name("${AndroidRealmConfig.realmInstanceConfig?.getRealmInstanceName()}.realm")
                 .schemaVersion(AndroidRealmConfig.migrationManager?.getCurrentSchemaVersion() ?: 0)
                 .migration { dynamicRealm, oldVersion, newVersion ->
                     val schema = dynamicRealm.schema

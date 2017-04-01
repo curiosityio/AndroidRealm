@@ -42,7 +42,13 @@ compile 'com.github.curiosityio.AndroidRealm:android-realm-recyclerview:0.1.0'
 
 # Configure
 
+In your custom Application class's `onCreate()` config the lib:
+
 ```
-AndroidRealmConfig.overrideRealmInstanceConfig() # Name realm instances. Allows you to easily create multiple realms.
-AndroidRealmConfig.setRealmMigrationManager() # Used to easily migrate realm instances when versions get bumped.
+AndroidRealmConfig.Builder()
+    .setRealmInstanceConfig()
+    .setMigrationManager()
+    .build(this)
 ```
+
+*Note: You do not need to call `Realm.init()` yourself. It will be called here for us.*
